@@ -13,7 +13,7 @@ Serial# 1234998871109
 
 **/
 
-var endpoint = "http://ec2-52-24-214-120.us-west-2.compute.amazonaws.com/GrailsGumballMachineVer2-2.0/gumballs/1";
+//var endpoint = "http://ec2-52-24-214-120.us-west-2.compute.amazonaws.com/GrailsGumballMachineVer2-2.0/gumballs/1";
 
 var fs = require('fs');
 var express = require('express');
@@ -22,7 +22,7 @@ var Client = require('node-rest-client').Client;
 var app = express();
 app.use(express.bodyParser());
 app.use("/images", express.static(__dirname + '/images'));
-
+/*
 var page = function( req, res, state ) {
     body = fs.readFileSync('./gumball.html');
     res.setHeader('Content-Type', 'text/html');
@@ -92,7 +92,7 @@ var handle_get = function (req, res) {
     console.log( "Get: ..." ) ;
     page( req, res, "no-coin" ) ;
 }
-
+*/
 app.set('port', (process.env.PORT || 5000));
 
 app.post("*", handle_post );
