@@ -48,7 +48,7 @@ var page = function( req, res, state ) {
 var order = function(req, res) {
     var client = new Client();
             var count = 0;
-            client.get( endpoint, 
+          /*  client.get( endpoint, 
                 function(data, response_raw) {
                     count = data.countGumballs ;
                     console.log( "count before = " + count ) ;
@@ -65,7 +65,7 @@ var order = function(req, res) {
                             page( req, res, "no-coin" ) ;
                         } 
                     );
-            });
+            });*/
 }
 
 var handle_post = function (req, res) {
