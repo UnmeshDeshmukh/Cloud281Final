@@ -88,15 +88,15 @@ var handle_post = function (req, res) {
     }    
 }
 
-var handle_get = function (req, res) {
+/*var handle_get = function (req, res) {
     console.log( "Get: ..." ) ;
     page( req, res, "no-coin" ) ;
-}
+}*/
 
 app.set('port', (process.env.PORT || 5000));
 
 app.post("*", handle_post );
-app.get( "*", handle_get ) ;
+//app.get( "*", handle_get ) ;
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
