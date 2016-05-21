@@ -184,7 +184,7 @@ data={};
        res.end( JSON.stringify(data));
 }
 
-}
+
 
 app.set('port', (process.env.PORT || 5000));
 
