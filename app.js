@@ -66,7 +66,7 @@ var order = function(req, res) {
                         } 
                     );
             });
-}
+}*/
 
 var handle_post = function (req, res) {
     console.log( "Post: " + "Action: " +  req.body.event + " State: " + req.body.state + "\n" ) ;
@@ -92,7 +92,7 @@ var handle_get = function (req, res) {
     console.log( "Get: ..." ) ;
     page( req, res, "no-coin" ) ;
 }
-*/
+
 app.set('port', (process.env.PORT || 5000));
 
 app.post("*", handle_post );
