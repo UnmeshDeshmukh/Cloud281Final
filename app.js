@@ -154,9 +154,10 @@ var handle_get = function (req, res) {
 
 var user = {
    "user4" : {
-      "id":"1",
-      "name" : "Hello World #1"
-      
+      "name" : "mohit",
+      "password" : "password4",
+      "profession" : "teacher",
+      "id": 4
    }
 }
 
@@ -172,7 +173,7 @@ var url = "mongodb://52.24.136.109:27017,52.35.94.222:27017,52.33.102.9:27017/te
 
 
     MongoClient.connect(url, function(err, db) {
-        var cursor =db.collection('helloworld').find();
+        var cursor =db.collection('mycol').find();
         var doc_total = {};
         var index = 0;
         cursor.each(function(err, doc) {
@@ -381,14 +382,13 @@ var user = {
 }
 
 
-var gett = function (req, res){
+
 
 
 var fs = require("fs");
 var assert = require('assert');
 var MongoClient = require('mongodb').MongoClient;
-var url =
- "mongodb://52.38.239.149:27017,52.37.63.167:27017,52.37.105.177:27017/test?w=0&readPreference=secondary";
+var url ="mongodb://52.38.239.149:27017,52.37.63.167:27017,52.37.105.177:27017/test?w=0&readPreference=secondary";
 
 
 
@@ -407,6 +407,12 @@ var url =
        });
     });
 }       
+
+
+
+
+
+
 
 
 //app.set('port',5000);
