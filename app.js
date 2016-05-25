@@ -154,10 +154,9 @@ var handle_get = function (req, res) {
 
 var user = {
    "user4" : {
-      "name" : "mohit",
-      "password" : "password4",
-      "profession" : "teacher",
-      "id": 4
+      "id":"1",
+      "name" : "Hello World #1"
+      
    }
 }
 
