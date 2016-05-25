@@ -172,7 +172,7 @@ var url = "mongodb://52.24.136.109:27017,52.35.94.222:27017,52.33.102.9:27017/te
 
 
     MongoClient.connect(url, function(err, db) {
-        var cursor =db.collection('mycol').find();
+        var cursor =db.collection('helloworld').find();
         var doc_total = {};
         var index = 0;
         cursor.each(function(err, doc) {
@@ -393,7 +393,7 @@ var url =
 
 
     MongoClient.connect(url, function(err, db) {
-        var cursor =db.collection('mycol').find();
+        var cursor =db.collection('helloworld').find();
         var doc_total = {};
         var index = 0;
         cursor.each(function(err, doc) {
